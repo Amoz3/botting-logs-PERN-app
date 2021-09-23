@@ -7,7 +7,7 @@ export const MainList = () => {
     const {BotData, setBotData} = useContext(Context);
 
     async function getData() {
-        const res = await fetch("/")
+        const res = await fetch("/db")
 
         const botArray = await res.json();
         console.log(botArray)

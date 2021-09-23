@@ -25,9 +25,9 @@ app.use(cors());
 app.use(express.json());
 
 
-app.get("/", async(req,res) => {
+app.get("/db", async(req,res) => {
     try {
-        const data = await pool.query("SELECT * FROM main");
+        const data = await pool.query("SELECT * FROM main;");
         res.json(data.rows)
     } catch (error) {
         console.error(error.message);
