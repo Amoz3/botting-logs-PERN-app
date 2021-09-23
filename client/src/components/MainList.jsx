@@ -6,15 +6,16 @@ export const MainList = () => {
 
     const {BotData, setBotData} = useContext(Context);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await BotDataGetter.get("/")
-                setBotData(response.data)
-            } catch (error) {}
-        };
+    async function getData() {
+        const res = await fetch("/")
 
-        fetchData();
+        const botArray = await res.json();
+
+        setBotData(botArray);
+    }
+
+    useEffect(() => {
+        getData();
     },[]);
 
     return (
