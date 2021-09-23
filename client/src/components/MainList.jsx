@@ -32,7 +32,7 @@ export const MainList = () => {
                              alt="gp" 
                              style={{height: 50} }/>
                         </th>
-                        <th scope="col">Script</th>
+                        <th scope="col">Sardines</th>
                         <th scope="col">Task</th>
                         <th scope="col">Age</th>
                     </tr>
