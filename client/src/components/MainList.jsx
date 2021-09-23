@@ -10,6 +10,7 @@ export const MainList = () => {
         const res = await fetch("/")
 
         const botArray = await res.json();
+        console.log(botArray)
 
         setBotData(botArray);
     }
