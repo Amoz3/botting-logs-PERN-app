@@ -13,6 +13,9 @@ const proConfig = {
     connectionString: process.env.DATABASE_URL // comes from heroku addon
 }
 
-const pool = new Pool (proConfig);
+const pool = new Pool({
+    connectionString: process.env.DATABASE_URL,
+    ssl: { rejectUnauthorized: false }
+});
 
-module.exports = pool
+module.exports = pool;

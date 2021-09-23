@@ -6,7 +6,6 @@ if (process.env.NODE_ENV === 'development') require('dotenv').config()
 
 const path = require('path');
 const PORT = process.env.PORT || 5000;
-console.log("Database_URL", process.env.DATABASE_URL);
 
 
 /*
@@ -45,5 +44,6 @@ app.get("/totalgp", async(req,res) => {
 });
 
 app.listen(PORT, () => {
+    console.log("Database_URL", process.env.DATABASE_URL);
     console.log(`Server has started on port ${PORT}`)
 })
