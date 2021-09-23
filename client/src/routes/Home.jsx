@@ -7,8 +7,8 @@ export const Home = () => {
     return (
         <div>
             <Header/>
-            {/* <Totals/> */}
-            {/* <MainList/> */}
+            <Totals/>
+            <MainList/>
         </div>
     )
 }
