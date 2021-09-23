@@ -6,6 +6,7 @@ if (process.env.NODE_ENV === 'development') require('dotenv').config()
 
 const path = require('path');
 const PORT = process.env.PORT || 5000;
+console.log("Database_URL", process.env.DATABASE_URL);
 
 
 /*
