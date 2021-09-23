@@ -40,7 +40,7 @@ export const MainList = () => {
                         <tr>
                             <td>{el.username}</td>
                             <td>{el.gp}</td>
-                            <td>{el.script}</td>
+                            <td>{el.sardines}</td>
                             <td>{el.task}</td>
                             <td>{el.age}</td>
                         </tr>
