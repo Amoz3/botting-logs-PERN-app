@@ -7,7 +7,7 @@ export const Home = () => {
     return (
         <div>
             <Header/>
-            <Totals/>
+            {/* <Totals/> */}
             <MainList/>
         </div>
     )
